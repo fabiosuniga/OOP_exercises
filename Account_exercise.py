@@ -8,7 +8,7 @@ class Account:
         return "Owner name: " + self.owner + ", Balance: $" + str(self.balance)
 
     def withdraw(self, value):
-        if self.balance > value:
+        if self.balance >= value:
             self.balance -= value
             print("Withdrawal Accepted")
         else: print("Insuficient balance for this operation!")
